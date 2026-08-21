@@ -47,3 +47,5 @@ dist
 out
 .vscode
 .idea
+
+/src/generated/prisma
