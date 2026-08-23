@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
 import { generatePrevisitSummary } from "@/lib/llm";
+import { sendBookingConfirmation } from "@/lib/email";
 
 export async function POST(req: Request) {
   const session = await auth();
@@ -70,7 +71,14 @@ export async function POST(req: Request) {
       }
     }
 
+        const doctorUser = await prisma.user.findUnique({ where: { id: doctor.userId } });
+    const patientUser = await prisma.user.findUnique({ where: { id: patientProfile.userId } });
+    if (patientUser) {
+      await sendBookingConfirmation(patientUser.email, doctorUser?.name || "your doctor", start);
+    }
+    
     return NextResponse.json(appointment, { status: 201 });
+    
   } catch (error) {
     console.error("Booking error:", error);
     return NextResponse.json(

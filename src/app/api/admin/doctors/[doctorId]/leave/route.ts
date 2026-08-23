@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
+import { sendLeaveCancellation } from "@/lib/email";
 
 export async function POST(
   req: Request,
@@ -49,6 +50,14 @@ export async function POST(
 
       return { leave, affectedAppointments };
     });
+
+        const doctorUser = await prisma.doctorProfile.findUnique({
+      where: { id: doctorId },
+      include: { user: true },
+    });
+    for (const appt of result.affectedAppointments) {
+      await sendLeaveCancellation(appt.patient.user.email, doctorUser?.user.name || "your doctor", appt.slotStart);
+    }
 
     // Notification hook: in Phase 6 (email integration), this is where
     // you'll loop over result.affectedAppointments and send each patient
