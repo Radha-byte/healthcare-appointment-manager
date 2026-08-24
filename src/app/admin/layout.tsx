@@ -1,14 +1,40 @@
-import { Navbar } from "@/components/Navbar";
-import { AdminSidebar } from "@/components/AdminSidebar";
+import { DashboardShell } from "@/components/dashboard/DashboardShell";
+import {
+  CalendarDays,
+  LayoutDashboard,
+  Stethoscope,
+  UserPlus,
+} from "lucide-react";
 
-export default function AdminLayout({ children }: { children: React.ReactNode }) {
+export default function AdminLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50">
-      <Navbar />
-      <div className="flex flex-1">
-        <AdminSidebar />
-        <main className="flex-1 p-8">{children}</main>
-      </div>
-    </div>
+    <DashboardShell
+      role="admin"
+      title="Operations overview"
+      subtitle="Manage doctors, availability and appointment operations."
+      items={[
+        {
+          href: "/admin",
+          label: "Overview",
+          icon: LayoutDashboard,
+        },
+        {
+          href: "/admin/doctors",
+          label: "Doctors",
+          icon: Stethoscope,
+        },
+        {
+          href: "/admin/doctors/new",
+          label: "Add doctor",
+          icon: UserPlus,
+        },
+      ]}
+    >
+      {children}
+    </DashboardShell>
   );
 }

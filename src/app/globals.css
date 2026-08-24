@@ -1,11 +1,75 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
+  --background: #f7f7f2;
+  --foreground: #17201c;
+  --ink: #17201c;
+  --muted: #6f7773;
+  --line: rgba(23, 32, 28, 0.09);
+  --surface: rgba(255, 255, 252, 0.78);
+  --sage: #7f9b88;
+  --sage-dark: #486653;
+  --lavender: #dcd7ed;
+  --peach: #f1d5c7;
+  --sky: #d6e8ed;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at 8% 5%, rgba(220, 215, 237, 0.35), transparent 25%),
+    radial-gradient(circle at 90% 12%, rgba(214, 232, 237, 0.35), transparent 25%),
+    var(--background);
   color: var(--foreground);
+}
+
+::selection {
+  background: #17201c;
+  color: #fff;
+}
+
+* {
+  border-color: var(--line);
+}
+
+@layer components {
+  .glass-surface {
+    @apply border backdrop-blur-xl;
+    background: var(--surface);
+    box-shadow: 0 20px 60px rgba(23, 32, 28, 0.06);
+  }
+
+  .premium-card {
+    @apply rounded-[28px] border bg-white/80 backdrop-blur-xl;
+    box-shadow:
+      0 12px 40px rgba(23, 32, 28, 0.055),
+      0 2px 8px rgba(23, 32, 28, 0.025);
+  }
+
+  .premium-card-hover {
+    @apply transition duration-300 ease-out;
+  }
+
+  .premium-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 24px 70px rgba(23, 32, 28, 0.10),
+      0 4px 14px rgba(23, 32, 28, 0.035);
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.22em];
+    color: var(--sage-dark);
+  }
+
+  .soft-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-semibold transition duration-200;
+  }
+
+  .soft-button:hover {
+    transform: translateY(-1px);
+  }
 }
