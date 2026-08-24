@@ -605,29 +605,60 @@ npm run lint
 
 ---
 
-# 🖼️ Application Preview
+# 📸 Product Showcase
 
-Add screenshots of the **actual implemented application** here.
+Explore the MediCare Connect interface across the complete healthcare journey — from authentication and doctor discovery to appointment booking and role-specific dashboards.
 
-### Landing Page
+## 🏠 Landing Page
 
-*Add landing page screenshot*
+The landing page introduces MediCare Connect and its vision of creating a simpler, more connected healthcare experience.
 
-### Patient Dashboard
+<p align="center"> <img src="public/landing-page.png" width="90%" alt="MediCare Connect Landing Page"/> </p>
 
-*Add patient dashboard screenshot*
+## 🔐 Authentication
+## Login
 
-### Doctor Dashboard
+A clean and focused login experience provides users with secure access to the platform.
 
-*Add doctor dashboard screenshot*
+<p align="center"> <img src="public/login-page.png" width="70%" alt="MediCare Connect Login Page"/> </p>
 
-### Admin Dashboard
+## Registration
 
-*Add admin dashboard screenshot*
+New users can create their account and enter the MediCare Connect ecosystem.
 
-### AI Pre-Visit Interface
+<p align="center"> <img src="public/registration-page.png" width="70%" alt="MediCare Connect Registration Page"/> </p>
 
-*Add AI pre-visit screenshot*
+## 👤 Patient Experience
+## Patient Dashboard
+
+The patient dashboard provides a centralized view of healthcare activity and upcoming appointments.
+
+<p align="center"> <img src="public/patient-dashboard.png" width="90%" alt="MediCare Connect Patient Dashboard"/> </p>
+
+## Doctor Search
+
+Patients can discover doctors and explore available healthcare providers.
+
+<p align="center"> <img src="public/doctor-search.png" width="90%" alt="MediCare Connect Doctor Search"/> </p>
+
+## Appointment Booking
+
+Patients can select a doctor and choose an available appointment slot through the booking workflow.
+
+<p align="center"> <img src="public/appointment-booking.png" width="90%" alt="MediCare Connect Appointment Booking"/> </p>
+
+## Appointment Details
+
+The appointment details view brings important visit information together in one place.
+
+<p align="center"> <img src="public/appointment-details.png" width="90%" alt="MediCare Connect Appointment Details"/> </p>
+
+## 🩺 Doctor Experience
+## Doctor Dashboard
+
+The doctor dashboard provides an organized workspace for managing upcoming appointments and patient-related information.
+
+<p align="center"> <img src="public/doctor-dashboard.png" width="90%" alt="MediCare Connect Doctor Dashboard"/> </p>
 
 ---
 
