@@ -2,146 +2,127 @@
 
 ### Healthcare, thoughtfully connected.
 
-> A modern healthcare appointment and follow-up platform that connects **patients, doctors, AI-assisted pre-visit intelligence, reminders, and clinic operations** into one calm and connected workspace.
+MediCare Connect is a modern healthcare platform designed to simplify the journey from **finding the right doctor to managing appointments and preparing for consultations**.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />
-  <img src="https://img.shields.io/badge/NextAuth-Authentication-000000?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/AI-Powered-8B5CF6?style=for-the-badge&logo=sparkles&logoColor=white" />
-</p>
-
-<p align="center">
-  <a href="YOUR_LIVE_DEMO_URL">
-    <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Project-17201C?style=for-the-badge" />
-  </a>
-  <a href="YOUR_GITHUB_REPOSITORY_URL">
-    <img src="https://img.shields.io/badge/💻_Source_Code-GitHub-111111?style=for-the-badge&logo=github" />
-  </a>
-</p>
+The platform brings patients, doctors, appointment management, and AI-assisted pre-visit information into a single, intuitive digital experience.
 
 ---
 
-## ✦ The Idea
+## ✦ Overview
 
-Healthcare should feel simple.
+The healthcare appointment process can often feel fragmented:
 
-But a typical appointment journey can involve:
+**Finding a doctor → Checking availability → Booking → Sharing symptoms → Consultation → Follow-up**
 
-**Searching → Calling → Waiting → Booking → Explaining symptoms → Consultation → Remembering follow-ups**
-
-MediCare Connect brings these steps into a single digital workflow.
-
-The platform is designed around one simple principle:
+MediCare Connect brings these interactions together in one connected workflow.
 
 > **Less friction before the visit. More clarity during the visit. Better continuity after it.**
 
----
-
-# ✨ What Makes MediCare Connect Different?
-
-MediCare Connect is not just an appointment booking application.
-
-It combines:
-
-- 🧑‍⚕️ Doctor discovery
-- 📅 Appointment scheduling
-- 🤖 AI-powered pre-visit summaries
-- 🔐 Role-based authentication
-- 🏥 Doctor and clinic management
-- 🔔 Notifications and reminders
-- 💊 Medication follow-up
-- 📊 Operational dashboards
-- 🛡️ Conflict-safe booking
-- 📱 Responsive modern UI
-
-Everything is connected around the patient's healthcare journey.
+The application provides dedicated experiences for **Patients, Doctors, and Administrators**, allowing each role to interact with the functionality relevant to them.
 
 ---
 
-# 🧭 Product Journey
+## ✨ Key Features
+
+* 👤 **Patient Dashboard**
+* 🩺 **Doctor Discovery**
+* 🔎 **Speciality-based Doctor Search**
+* 📅 **Appointment Booking**
+* 🕐 **Appointment Slot Management**
+* 📝 **Pre-visit Symptom Submission**
+* 🤖 **AI-assisted Pre-visit Information**
+* 🩺 **Doctor Consultation Workflow**
+* ⚙️ **Admin Management**
+* 👨‍⚕️ **Doctor Management**
+* 📊 **Dashboard & Appointment Insights**
+* 🔐 **Role-based Application Experience**
+* 📱 **Responsive User Interface**
+
+---
+
+# 🧭 Healthcare Journey
 
 ```text
-                    MEDICARE CONNECT
-                           │
-                           ▼
-                 ┌──────────────────┐
-                 │   Discover Care  │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │   Find a Doctor  │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │ Choose Time Slot │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │  Share Symptoms  │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │  AI Pre-Visit    │
-                 │    Briefing      │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │   Doctor Visit   │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │    Follow-up     │
-                 │   & Reminders    │
-                 └──────────────────┘
+                         MEDICARE CONNECT
+                                │
+                                ▼
+                        ┌───────────────┐
+                        │ Find a Doctor │
+                        └───────┬───────┘
+                                │
+                                ▼
+                        ┌───────────────┐
+                        │ Choose Doctor │
+                        └───────┬───────┘
+                                │
+                                ▼
+                        ┌───────────────┐
+                        │ Select Slot   │
+                        └───────┬───────┘
+                                │
+                                ▼
+                        ┌───────────────┐
+                        │ Book Visit    │
+                        └───────┬───────┘
+                                │
+                                ▼
+                        ┌───────────────┐
+                        │ Share Symptoms│
+                        └───────┬───────┘
+                                │
+                                ▼
+                        ┌───────────────┐
+                        │ AI Assistance │
+                        └───────┬───────┘
+                                │
+                                ▼
+                        ┌───────────────┐
+                        │ Consultation  │
+                        └───────┬───────┘
+                                │
+                                ▼
+                        ┌───────────────┐
+                        │ Follow-up     │
+                        └───────────────┘
+```
 
 ---
 
-# 🌟 Core Experience
+# 👥 User Experiences
 
-MediCare Connect is organized around three dedicated experiences, each designed for a different part of the healthcare workflow.
+MediCare Connect is organized around three primary roles.
 
-| 🧑‍🤝‍🧑 Patient | 🩺 Doctor | ⚙️ Admin |
-|:---:|:---:|:---:|
-| Find doctors | Manage appointments | Manage doctors |
-| Book appointments | Review patients | Monitor appointments |
-| Share symptoms | AI pre-visit briefing | Manage availability |
-| View follow-ups | Complete visits | Manage leave |
-| Receive reminders | Manage consultation flow | View operational insights |
+|      Role      | Primary Purpose                                       |
+| :------------: | ----------------------------------------------------- |
+| 👤 **Patient** | Discover doctors and manage appointments              |
+|  🩺 **Doctor** | Review appointments and manage consultations          |
+|  ⚙️ **Admin**  | Manage doctors, appointments, and platform operations |
 
 ---
 
 # 👤 Patient Experience
 
-The patient workspace is designed to make discovering and managing healthcare feel simple.
+The patient interface focuses on making healthcare discovery and appointment management simple.
 
-### What patients can do
+### Patients can
 
-- 🔎 Search doctors by speciality
-- 🩺 Explore available doctors
-- 📅 Select available appointment slots
-- ✅ Confirm appointments
-- 📝 Share symptoms before a visit
-- 🤖 Receive AI-assisted pre-visit preparation
-- 📋 View appointment details
-- 🔔 Stay informed through reminders
-- 💊 Keep track of follow-up information
+* 🔎 Search for doctors
+* 🩺 Browse doctor profiles
+* 🏷️ Explore doctors by speciality
+* 📅 View available appointment slots
+* ✅ Book appointments
+* 📝 Provide symptoms before a consultation
+* 🤖 View AI-assisted pre-visit information
+* 📋 Review appointment information
+* 🔔 Track appointment-related updates
 
-### Patient Journey
+### Patient Flow
 
 ```text
 Patient Dashboard
        │
        ▼
-  Find a Doctor
+ Find a Doctor
        │
        ▼
 Select Speciality
@@ -156,36 +137,33 @@ Available Slots
 Book Appointment
        │
        ▼
- Share Symptoms
+Share Symptoms
        │
        ▼
-AI Pre-Visit Briefing
+AI-assisted Information
        │
        ▼
- Doctor Consultation
-       │
-       ▼
- Follow-up & Reminders
+Doctor Consultation
+```
 
- ---
+---
 
 # 🩺 Doctor Experience
 
-The doctor workspace is designed to turn appointment information into a focused clinical workflow — giving doctors the context they need before the consultation begins.
+The doctor workspace is designed to provide the information required before and during appointments.
 
-### What doctors can do
+### Doctors can
 
-- 📅 View upcoming appointments
-- 👤 Review patient information
-- 🤖 Read AI-generated pre-visit summaries
-- 🚨 Identify high-urgency appointments
-- 📝 Review patient chief complaints
-- 🔎 Open individual appointment visits
-- 🩺 Conduct and manage consultations
-- ✅ Complete visits
-- 📊 Monitor appointment activity
+* 📅 View upcoming appointments
+* 👤 Review patient information
+* 📝 Review reported symptoms
+* 🤖 View AI-assisted pre-visit information
+* 🚨 Review urgency-related information when available
+* 📋 Open appointment details
+* 🩺 Manage the consultation workflow
+* ✅ Complete appointments
 
-### Doctor Journey
+### Doctor Flow
 
 ```text
 Doctor Dashboard
@@ -194,245 +172,258 @@ Doctor Dashboard
 Upcoming Appointments
        │
        ▼
-Select Patient
+ Select Patient
        │
        ▼
-Review Patient Context
-       │
-       ▼
-AI Pre-Visit Briefing
+Review Patient Information
        │
        ├───────────────┐
        ▼               ▼
-Chief Complaint    Urgency Level
+Symptoms        AI-assisted
+                Information
        │               │
        └───────┬───────┘
                ▼
-        Start Consultation
+        Consultation
                │
                ▼
-          Complete Visit
+        Complete Visit
+```
 
 ---
 
 # ⚙️ Admin Experience
 
-The admin workspace acts as the operational control center of MediCare Connect, bringing doctors, appointments, availability and clinic activity into one organized workspace.
+The admin workspace provides centralized control over important platform operations.
 
-### What admins can do
+### Administrators can
 
-- 👨‍⚕️ Add and manage doctor profiles
-- 📅 Monitor appointments across the platform
-- 🕐 Manage doctor availability
-- ✈️ Track doctor leave information
-- 📊 View operational statistics
-- 👥 Monitor recently added doctors
-- 🔎 Review clinic activity
-- 🔄 Keep healthcare operations organized
+* 👨‍⚕️ Manage doctor information
+* 📅 Monitor appointments
+* 🕐 Manage availability
+* ✈️ Manage doctor leave information
+* 📊 View platform statistics
+* 🔎 Monitor operational activity
 
-### Admin Journey
+### Admin Flow
 
 ```text
 Admin Dashboard
        │
-       ├──────────────────┐
-       │                  │
-       ▼                  ▼
-Manage Doctors      Appointments
-       │                  │
-       ▼                  ▼
-Doctor Profiles     Booking Activity
-       │                  │
-       ▼                  │
-Availability              │
-       │                  │
-       └────────┬─────────┘
-                ▼
-        Clinic Operations
-                │
-                ▼
-          System Overview
-
-
-
-📅 Appointment Management
-
-Appointments are treated as an end-to-end workflow rather than simply a calendar entry.
-
-MediCare Connect connects the patient booking experience with the doctor's consultation workflow while giving administrators visibility into appointment activity.
-
-Appointment Lifecycle
-┌──────────────┐
-│   Available  │
-└──────┬───────┘
+       ├───────────────┐
+       ▼               ▼
+Manage Doctors    Appointments
+       │               │
+       ▼               ▼
+Doctor Profiles   Booking Activity
        │
        ▼
-┌──────────────┐
-│    Selected  │
-└──────┬───────┘
+Availability
        │
        ▼
-┌──────────────┐
-│     Booked   │
-└──────┬───────┘
-       │
-       ▼
-┌──────────────┐
-│   Confirmed  │
-└──────┬───────┘
-       │
-       ▼
-┌──────────────┐
-│ Consultation │
-└──────┬───────┘
-       │
-       ▼
-┌──────────────┐
-│   Completed  │
-└──────────────┘
-Appointment Information
+Platform Operations
+```
 
-Each appointment can bring together:
+---
 
-👤 Patient information
-🩺 Doctor information
-🏷️ Specialisation
-📅 Appointment date
-🕐 Appointment time
-📌 Appointment status
-🚨 Urgency information
-📝 Chief complaint
-🤖 AI pre-visit summary
-🤖 AI Pre-Visit Intelligence
+# 📅 Appointment Management
 
-One of the core experiences of MediCare Connect is the AI-assisted pre-visit workflow.
+Appointments form the central workflow connecting patients and doctors.
 
-Before a consultation begins, patient-provided symptoms can be transformed into a concise briefing that helps the doctor understand the patient's reported context more efficiently.
+### Appointment Lifecycle
 
-How It Works
-             PATIENT
-                │
-                ▼
-       Shares Symptoms
-                │
-                ▼
-       ┌────────────────┐
-       │  AI Processing │
-       └───────┬────────┘
-               │
-               ▼
-      ┌──────────────────┐
-      │ Pre-Visit Summary │
-      └────────┬─────────┘
-               │
-       ┌───────┴────────┐
-       ▼                ▼
-Chief Complaint    Urgency Level
-       │                │
-       └───────┬────────┘
-               │
-               ▼
-        Doctor Reviews
-               │
-               ▼
-          Consultation
-Example Workflow
+```text
+Available
+    │
+    ▼
+Selected
+    │
+    ▼
+Booked
+    │
+    ▼
+Confirmed
+    │
+    ▼
+Consultation
+    │
+    ▼
+Completed
+```
 
-A patient provides symptoms before the appointment.
+An appointment can contain information such as:
 
+* 👤 Patient
+* 🩺 Doctor
+* 🏷️ Speciality
+* 📅 Date
+* 🕐 Time
+* 📌 Status
+* 📝 Patient-reported symptoms
+* 🤖 AI-assisted pre-visit information
+
+---
+
+# 🤖 AI-Assisted Pre-Visit Information
+
+One of the key ideas behind MediCare Connect is helping doctors receive useful patient context **before the consultation begins**.
+
+Instead of requiring doctors to gather all preliminary information from scratch, patient-provided symptoms can be processed into a more structured pre-visit view.
+
+### Workflow
+
+```text
+Patient
+   │
+   ▼
+Shares Symptoms
+   │
+   ▼
+AI Processing
+   │
+   ▼
+Structured Information
+   │
+   ├───────────────┐
+   ▼               ▼
+Chief Complaint   Additional
+                  Context
+   │               │
+   └───────┬───────┘
+           ▼
+     Doctor Review
+           │
+           ▼
+      Consultation
+```
+
+### Example
+
+```text
 Patient Input
-     │
-     ▼
+
 "Headache for several days,
 worse during the evening."
-     │
-     ▼
-AI-assisted processing
-     │
-     ▼
-Structured pre-visit context
-     │
-     ├── Chief Complaint
-     ├── Reported Duration
-     └── Urgency Level
-     │
-     ▼
-Doctor Review
-Pre-Visit Briefing
-┌──────────────────────────────────────┐
-│          AI PRE-VISIT BRIEFING       │
-├──────────────────────────────────────┤
-│                                      │
-│  Chief Complaint                     │
-│  Headache                            │
-│                                      │
-│  Reported Duration                   │
-│  Several days                        │
-│                                      │
-│  Additional Context                  │
-│  Worse during the evening            │
-│                                      │
-│  Urgency Level                       │
-│  Based on configured AI workflow     │
-│                                      │
-└──────────────────────────────────────┘
 
-AI-generated information is intended to organize patient-provided information and support the consultation workflow. It is not a medical diagnosis.
+             │
+             ▼
 
-🔐 Authentication & Role-Based Access
+      AI-assisted processing
 
-MediCare Connect separates the application experience according to the user's role.
+             │
+             ▼
 
-Each role receives a dedicated workspace containing the functionality relevant to that user.
+      Pre-visit Information
 
-Role Structure
-Role	Workspace	Primary Responsibility
-👤 Patient	Patient Workspace	Find doctors and manage appointments
-🩺 Doctor	Doctor Workspace	Review patients and manage consultations
-⚙️ Admin	Admin Workspace	Manage doctors and clinic operations
-Access Flow
+      • Chief Complaint
+        Headache
+
+      • Reported Duration
+        Several days
+
+      • Additional Context
+        Worse during the evening
+
+             │
+             ▼
+
+        Doctor Review
+```
+
+> **Important:** AI-generated information is intended to organize and present patient-provided information. It is not a medical diagnosis and does not replace professional medical judgment.
+
+---
+
+# 🔐 Role-Based Experience
+
+The application separates functionality according to the user's role.
+
+```text
                          LOGIN
                            │
                            ▼
-                   AUTHENTICATION
+                    AUTHENTICATION
                            │
-             ┌─────────────┼─────────────┐
-             │             │             │
-             ▼             ▼             ▼
-          PATIENT        DOCTOR        ADMIN
-             │             │             │
-             ▼             ▼             ▼
-       Patient UI      Doctor UI      Admin UI
-             │             │             │
-             ▼             ▼             ▼
-       Patient Flow   Clinical Flow   Operations
+          ┌────────────────┼────────────────┐
+          ▼                ▼                ▼
+       PATIENT           DOCTOR            ADMIN
+          │                │                │
+          ▼                ▼                ▼
+    Patient UI         Doctor UI         Admin UI
+          │                │                │
+          ▼                ▼                ▼
+ Patient Workflow   Clinical Workflow   Operations
+```
 
-This keeps each workspace focused while maintaining a consistent experience throughout the platform.
+This keeps each workspace focused while maintaining a consistent product experience.
 
-✨ Feature Matrix
-Feature	👤 Patient	🩺 Doctor	⚙️ Admin
-🔐 Authentication	✓	✓	✓
-🔎 Doctor Search	✓	—	✓
-🩺 Doctor Profiles	✓	—	✓
-📅 Appointment Booking	✓	—	✓
-📆 Appointment Management	✓	✓	✓
-📝 Symptom Submission	✓	—	—
-🤖 AI Pre-Visit Summary	✓	✓	—
-🚨 Urgency Information	—	✓	—
-📋 Chief Complaint	✓	✓	—
-🩺 Consultation Workflow	—	✓	—
-👨‍⚕️ Doctor Management	—	—	✓
-🕐 Availability Management	—	—	✓
-✈️ Leave Management	—	—	✓
-📊 Dashboard Statistics	✓	✓	✓
-🔔 Reminders	✓	✓	—
-💊 Follow-up Information	✓	✓	—
-🎨 Design Philosophy
+---
 
-MediCare Connect is designed to feel less like a traditional hospital management system and more like a modern, thoughtful healthcare product.
+# ✦ Feature Overview
 
-The interface combines:
+| Feature                           | 👤 Patient | 🩺 Doctor | ⚙️ Admin |
+| :-------------------------------- | :--------: | :-------: | :------: |
+| Authentication                    |      ✓     |     ✓     |     ✓    |
+| Doctor Discovery                  |      ✓     |     —     |     ✓    |
+| Doctor Profiles                   |      ✓     |     —     |     ✓    |
+| Appointment Booking               |      ✓     |     —     |     ✓    |
+| Appointment Management            |      ✓     |     ✓     |     ✓    |
+| Symptom Submission                |      ✓     |     —     |     —    |
+| AI-assisted Pre-visit Information |      ✓     |     ✓     |     —    |
+| Patient Information               |      ✓     |     ✓     |     ✓    |
+| Consultation Workflow             |      —     |     ✓     |     —    |
+| Doctor Management                 |      —     |     —     |     ✓    |
+| Availability Management           |      —     |     —     |     ✓    |
+| Leave Management                  |      —     |     —     |     ✓    |
+| Dashboard Statistics              |      ✓     |     ✓     |     ✓    |
 
+---
+
+# 🎨 Design Philosophy
+
+MediCare Connect follows a **calm, modern, human-centered healthcare design direction**.
+
+Instead of relying on the conventional clinical-blue aesthetic, the interface uses warm neutrals, muted greens, soft accent colors, rounded surfaces, and generous whitespace.
+
+### Design Principles
+
+**01 — Calm**
+
+Soft backgrounds and subtle visual elements create a comfortable environment.
+
+**02 — Human**
+
+Friendly typography, approachable components, and rounded surfaces make the product feel welcoming.
+
+**03 — Focused**
+
+Clear hierarchy helps users understand important information quickly.
+
+**04 — Connected**
+
+Patient, doctor, and admin experiences share a consistent visual language.
+
+**05 — Responsive**
+
+The interface is designed to work across different screen sizes.
+
+---
+
+# 🎨 Visual Language
+
+| Color              | Hex       |
+| ------------------ | --------- |
+| Primary Background | `#F7F7F2` |
+| Deep Forest        | `#17201C` |
+| Sage               | `#7F9B88` |
+| Soft Green         | `#E8EFE9` |
+| Soft Lavender      | `#E6E1F0` |
+| Soft Blue          | `#DFECEF` |
+| Soft Peach         | `#F1DDD3` |
+
+The overall visual direction combines:
+
+```text
 Healthcare
      +
 Modern SaaS
@@ -442,140 +433,97 @@ Editorial Design
 Soft Minimalism
      +
 Human-centered UX
-Design Principles
-01 — Calm
+```
 
-Soft backgrounds, subtle borders and muted colours create a comfortable visual environment.
+---
 
-02 — Human
+# 🏗️ Application Architecture
 
-Rounded surfaces, friendly typography and approachable interactions make the experience feel less clinical and more welcoming.
+```text
+                    ┌───────────────────┐
+                    │       USER        │
+                    │                   │
+                    │ Patient / Doctor  │
+                    │      / Admin      │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │    Web Interface  │
+                    │   Next.js / React  │
+                    └─────────┬─────────┘
+                              │
+                 ┌────────────┼────────────┐
+                 │            │            │
+                 ▼            ▼            ▼
+          ┌────────────┐ ┌──────────┐ ┌────────────┐
+          │ Patient    │ │ Doctor   │ │ Admin      │
+          │ Workflow   │ │ Workflow │ │ Workflow   │
+          └─────┬──────┘ └────┬─────┘ └─────┬──────┘
+                │              │             │
+                └──────────────┼─────────────┘
+                               ▼
+                    ┌───────────────────┐
+                    │ Application Logic │
+                    └─────────┬─────────┘
+                              │
+                    ┌─────────┴─────────┐
+                    ▼                   ▼
+             ┌────────────┐      ┌────────────┐
+             │ Data Layer │      │ AI Layer   │
+             └────────────┘      └────────────┘
+```
 
-03 — Focused
+---
 
-Important information is given clear visual hierarchy so users can understand what matters at a glance.
+# 🛠️ Technology Stack
 
-04 — Connected
+### Frontend
 
-Patient, doctor and admin interfaces share the same visual language while serving different workflows.
+* **Next.js**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+* **Lucide React**
 
-05 — Responsive
+### Application Layer
 
-The experience is designed to remain usable across desktop, tablet and mobile screen sizes.
+* Next.js application architecture
+* Server-side application logic
+* API-based workflows
 
-🎨 Visual Language
+### Data & Authentication
 
-The interface uses a soft healthcare-inspired palette.
+* Application database
+* Role-based access
+* Secure environment configuration
 
-Primary Background     #F7F7F2
-Deep Forest            #17201C
-Sage                   #7F9B88
-Soft Green             #E8EFE9
-Soft Lavender          #E6E1F0
-Soft Blue              #DFECEF
-Soft Peach             #F1DDD3
+### AI
 
-The visual direction intentionally avoids an overly traditional medical-blue aesthetic.
+* AI-assisted pre-visit information generation
 
-Instead, it uses warm neutrals, muted greens, lavender accents and generous whitespace to create a calmer digital healthcare experience.
+### Development
 
-🏗️ Application Architecture
-                         ┌─────────────────┐
-                         │      USER       │
-                         │                 │
-                         │ Patient/Doctor  │
-                         │      /Admin     │
-                         └────────┬────────┘
-                                  │
-                                  ▼
-                         ┌─────────────────┐
-                         │     Next.js     │
-                         │   Application   │
-                         └────────┬────────┘
-                                  │
-                 ┌────────────────┼────────────────┐
-                 │                │                │
-                 ▼                ▼                ▼
-          ┌────────────┐   ┌────────────┐   ┌────────────┐
-          │ NextAuth   │   │   Prisma   │   │ AI Service │
-          │    Auth    │   │    ORM     │   │            │
-          └────────────┘   └──────┬─────┘   └────────────┘
-                                  │
-                                  ▼
-                           ┌──────────────┐
-                           │   Database   │
-                           └──────────────┘
-Application Layers
-┌─────────────────────────────────────┐
-│              UI Layer               │
-│  Landing · Dashboard · Components   │
-└──────────────────┬──────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────┐
-│          Application Layer          │
-│ Routes · Server Components · APIs   │
-└──────────────────┬──────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────┐
-│           Authentication            │
-│             NextAuth                │
-└──────────────────┬──────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────┐
-│             Data Layer              │
-│              Prisma                 │
-└──────────────────┬──────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────┐
-│              Database               │
-└─────────────────────────────────────┘
-🛠️ Technology Stack
-Frontend
-Next.js
-React
-TypeScript
-Tailwind CSS
-Lucide React
-Backend
-Next.js Server Components
-Next.js API Routes
-Prisma ORM
-Authentication
-NextAuth
-Database
-Relational database managed through Prisma
-AI
-AI-assisted pre-visit summary generation
-Development
-Git
-GitHub
-npm
-📁 Project Structure
+* Git
+* GitHub
+* npm
+
+> The exact versions and infrastructure dependencies should be taken from `package.json` and the project's environment configuration rather than being hard-coded in the README.
+
+---
+
+# 📁 Project Structure
+
+The project follows a modular Next.js structure separating application routes, reusable components, data logic, and configuration.
+
+```text
 medicare-connect/
 │
 ├── app/
 │   ├── admin/
-│   │   ├── doctors/
-│   │   └── page.tsx
-│   │
 │   ├── doctor/
-│   │   ├── appointments/
-│   │   └── page.tsx
-│   │
 │   ├── patient/
-│   │   ├── doctors/
-│   │   ├── book/
-│   │   └── page.tsx
-│   │
 │   ├── api/
-│   │   ├── patient/
-│   │   ├── doctor/
-│   │   └── admin/
-│   │
 │   ├── login/
 │   ├── register/
 │   ├── page.tsx
@@ -584,151 +532,178 @@ medicare-connect/
 │
 ├── components/
 │   ├── ui/
-│   │   ├── Badge.tsx
-│   │   ├── Button.tsx
-│   │   ├── Card.tsx
-│   │   ├── EmptyState.tsx
-│   │   ├── Input.tsx
-│   │   └── StatCard.tsx
-│   │
 │   ├── AppointmentCard.tsx
 │   ├── DashboardShell.tsx
 │   └── Navbar.tsx
 │
 ├── lib/
-│   ├── prisma.ts
 │   └── ...
-│
-├── prisma/
-│   └── schema.prisma
 │
 ├── public/
 │   └── ...
 │
-├── auth.ts
-├── middleware.ts
 ├── package.json
 └── README.md
-🚀 Getting Started
-1. Clone the repository
+```
+
+---
+
+# 🚀 Getting Started
+
+## 1. Clone the Repository
+
+```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
 cd medicare-connect
-2. Install dependencies
+```
+
+## 2. Install Dependencies
+
+```bash
 npm install
-3. Configure environment variables
+```
 
-Create a .env file in the project root.
+## 3. Configure Environment Variables
 
-DATABASE_URL="your_database_url"
+Create a `.env.local` file in the project root and add the environment variables required by the application.
 
-AUTH_SECRET="your_auth_secret"
+```env
+# Add the variables required by your project here
+```
 
-AI_API_KEY="your_ai_api_key"
+> Never commit `.env`, `.env.local`, API keys, database credentials, or authentication secrets to GitHub.
 
-⚠️ Never commit .env files, API keys, database credentials or authentication secrets to GitHub.
+## 4. Start the Development Server
 
-4. Generate Prisma Client
-npx prisma generate
-5. Setup the database
-
-For direct schema synchronization:
-
-npx prisma db push
-
-Or, when using migrations:
-
-npx prisma migrate dev
-6. Start the development server
+```bash
 npm run dev
+```
 
-Then open:
+Open the application at:
 
+```text
 http://localhost:3000
-🧪 Available Commands
-Start development server
+```
+
+---
+
+# 🧪 Available Commands
+
+```bash
+# Start development server
 npm run dev
-Build for production
+
+# Build for production
 npm run build
-Start production server
+
+# Start production server
 npm start
-Run linting
+
+# Run linting
 npm run lint
-🖼️ Application Preview
+```
 
-Replace the placeholders below with screenshots of your actual deployed application before final submission.
+---
 
-Landing Page
-📸 Add landing-page screenshot here
-Patient Workspace
-📸 Add patient-dashboard screenshot here
-Doctor Workspace
-📸 Add doctor-dashboard screenshot here
-Admin Workspace
-📸 Add admin-dashboard screenshot here
-AI Pre-Visit Briefing
-📸 Add AI-summary screenshot here
-🌐 Deployment
+# 🖼️ Application Preview
 
-MediCare Connect is designed to be deployed as a production-ready Next.js application.
+Add screenshots of the **actual implemented application** here.
 
-Deployment Flow
+### Landing Page
+
+*Add landing page screenshot*
+
+### Patient Dashboard
+
+*Add patient dashboard screenshot*
+
+### Doctor Dashboard
+
+*Add doctor dashboard screenshot*
+
+### Admin Dashboard
+
+*Add admin dashboard screenshot*
+
+### AI Pre-Visit Interface
+
+*Add AI pre-visit screenshot*
+
+---
+
+# 🌐 Deployment
+
+MediCare Connect can be deployed as a Next.js web application.
+
+### Deployment Flow
+
+```text
 GitHub Repository
        │
        ▼
 Deployment Platform
        │
-       ├── Build Application
+       ├── Install Dependencies
        ├── Configure Environment Variables
-       ├── Connect Database
-       ├── Generate Prisma Client
+       ├── Build Application
+       ├── Connect Required Services
        └── Deploy
               │
               ▼
        🌐 Live Application
-Production Checklist
-☐ Configure production database
-☐ Configure authentication secret
-☐ Configure AI credentials
-☐ Add production environment variables
-☐ Generate Prisma client
-☐ Test authentication
-☐ Test patient booking
-☐ Test doctor workflow
-☐ Test admin workflow
-☐ Test AI workflow
-☐ Test failure handling
-☐ Test responsive layouts
-☐ Verify production deployment
-🔮 Future Roadmap
+```
 
-MediCare Connect can evolve beyond appointment scheduling into a broader digital healthcare coordination platform.
+### Production Checklist
 
-Potential additions
-📹 Video consultations
-💳 Online payments
-💊 Digital prescriptions
-🧪 Lab report management
-📄 Medical document management
-🔔 Real-time notifications
-📱 Progressive Web App support
-🌍 Multi-language support
-📊 Advanced healthcare analytics
-🏥 Multi-clinic support
-📅 Calendar integrations
-🧠 More advanced AI-assisted workflows
-⚠️ Disclaimer
+* [ ] Configure production environment variables
+* [ ] Configure the production database
+* [ ] Verify authentication
+* [ ] Test patient workflows
+* [ ] Test doctor workflows
+* [ ] Test admin workflows
+* [ ] Test appointment booking
+* [ ] Test AI-assisted workflow
+* [ ] Test responsive layouts
+* [ ] Verify production deployment
 
-MediCare Connect is a software project created to demonstrate a modern healthcare appointment and coordination workflow.
+---
 
-AI-generated information is intended to assist with organizing and presenting information and must not be treated as a medical diagnosis or a replacement for professional medical judgment.
+# 🔮 Future Roadmap
 
-👩‍💻 About the Developer
-Radha Rani
+Potential future improvements include:
 
-B.Tech Computer Science Engineering · VIT Bhopal University
+* 📹 Video consultations
+* 💳 Online payments
+* 💊 Digital prescriptions
+* 🧪 Lab report management
+* 📄 Medical document management
+* 🔔 Real-time notifications
+* 📱 Progressive Web App support
+* 🌍 Multi-language support
+* 📊 Advanced healthcare analytics
+* 🏥 Multi-clinic support
+* 📅 Calendar integrations
+* 🧠 Expanded AI-assisted workflows
 
-Building at the intersection of:
+---
 
+# ⚠️ Disclaimer
+
+MediCare Connect is a software project created to demonstrate a modern healthcare appointment and coordination experience.
+
+AI-generated information is intended to assist with organizing and presenting information provided through the application. It should **not be treated as a medical diagnosis, medical advice, or a replacement for professional medical judgment**.
+
+---
+
+# 👩‍💻 About the Developer
+
+## Radha Rani
+
+**B.Tech Computer Science Engineering · VIT Bhopal University**
+
+Interested in building products at the intersection of:
+
+```text
 Software Engineering
         +
 Artificial Intelligence
@@ -736,16 +711,32 @@ Artificial Intelligence
 Product Design
         +
 Real-world Problem Solving
-<p align="center"> <a href="YOUR_LINKEDIN_URL"> <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> <a href="YOUR_GITHUB_URL"> <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" /> </a> </p>
-⭐ Support the Project
-
-If you found MediCare Connect interesting, consider giving the repository a ⭐ on GitHub.
+```
 
 <p align="center">
-🩺 MediCare Connect
 
-Less waiting. More clarity. Better care coordination.
+<a href="YOUR_LINKEDIN_URL">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="YOUR_GITHUB_URL">
+<img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+</p>
+
+---
+
+# ⭐ Support the Project
+
+If you find **MediCare Connect** interesting, consider giving the repository a ⭐ on GitHub.
+
+<p align="center">
+
+### 🩺 MediCare Connect
+
+**Less waiting. More clarity. Better care coordination.**
 
 Built with care · 2026
 
-</p> ```
+</p>
