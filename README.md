@@ -660,6 +660,12 @@ The doctor dashboard provides an organized workspace for managing upcoming appoi
 
 <p align="center"> <img src="public/doctor-dashboard.png" width="90%" alt="MediCare Connect Doctor Dashboard"/> </p>
 
+## Doctor Visit Feedback
+
+The doctor provides healthcare tips through notes and the medications that is needed by the patient , they can directly provide the time and medicine intake update through it.
+
+<p align="center"> <img src="public/visit_status-update.png" width="90%" alt="MediCare Connect Doctor Dashboard"/> </p>
+
 ---
 
 # 🌐 Deployment
