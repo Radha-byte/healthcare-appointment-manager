@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
 import { sendLeaveCancellation } from "@/lib/email";
+import { deleteCalendarEvent } from "@/lib/googleCalendar";
 
 export async function POST(
   req: Request,
@@ -57,6 +58,10 @@ export async function POST(
     });
     for (const appt of result.affectedAppointments) {
       await sendLeaveCancellation(appt.patient.user.email, doctorUser?.user.name || "your doctor", appt.slotStart);
+    if (appt.googleEventId) {
+        await deleteCalendarEvent(appt.googleEventId);
+      }
+    
     }
 
     // Notification hook: in Phase 6 (email integration), this is where

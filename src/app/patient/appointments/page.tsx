@@ -1,10 +1,11 @@
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
-import { Badge } from "@/components/ui/Badge";
-import { StatCard } from "@/components/ui/StatCard";
-import { EmptyState } from "@/components/ui/EmptyState";
 import { CalendarClock, CheckCircle2, XCircle, CalendarSearch } from "lucide-react";
 import Link from "next/link";
+import { StatCard } from "@/components/ui/StatCard";
+import { EmptyState } from "@/components/ui/EmptyState";
+import { AppointmentActions } from "@/components/AppointmentActions";
+import { Badge } from "@/components/ui/Badge";
 
 export default async function MyAppointmentsPage() {
   const session = await auth();
@@ -65,6 +66,9 @@ export default async function MyAppointmentsPage() {
                 <div className="mt-4 bg-blue-50 rounded-xl p-3 text-sm text-blue-900">
                   {a.postVisitSummary.patientFriendlySummary}
                 </div>
+              )}
+              {["PENDING", "CONFIRMED"].includes(a.status) && (
+                <AppointmentActions appointmentId={a.id} doctorId={a.doctor.id} />
               )}
             </div>
           ))}

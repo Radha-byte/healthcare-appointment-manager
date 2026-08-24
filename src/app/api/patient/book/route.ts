@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
 import { generatePrevisitSummary } from "@/lib/llm";
 import { sendBookingConfirmation } from "@/lib/email";
+import { createCalendarEvent } from "@/lib/googleCalendar";
 
 export async function POST(req: Request) {
   const session = await auth();
@@ -77,6 +78,18 @@ export async function POST(req: Request) {
       await sendBookingConfirmation(patientUser.email, doctorUser?.name || "your doctor", start);
     }
     
+        const eventId = await createCalendarEvent({
+      summary: `Appointment with ${doctorUser?.name}`,
+      description: symptoms ? `Symptoms: ${symptoms}` : "Healthcare appointment",
+      start,
+      end,
+      attendeeEmails: [patientUser!.email, doctorUser!.email].filter(Boolean) as string[],
+    });
+
+    if (eventId) {
+      await prisma.appointment.update({ where: { id: appointment.id }, data: { googleEventId: eventId } });
+    }
+
     return NextResponse.json(appointment, { status: 201 });
     
   } catch (error) {

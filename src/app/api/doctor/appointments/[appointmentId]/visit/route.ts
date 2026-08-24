@@ -18,13 +18,31 @@ export async function POST(
 
   await prisma.postVisitNote.create({ data: { appointmentId, doctorNotes } });
 
-  if (medications?.length) {
-    await prisma.prescription.createMany({
-      data: medications.map((m: { medicationName: string; dosage: string; frequencyPerDay: number; durationDays: number }) => ({
-        appointmentId,
-        ...m,
-      })),
-    });
+    if (medications?.length) {
+    for (const m of medications) {
+      const prescription = await prisma.prescription.create({
+        data: {
+          appointmentId,
+          medicationName: m.medicationName,
+          dosage: m.dosage,
+          frequencyPerDay: m.frequencyPerDay,
+          durationDays: m.durationDays,
+        },
+      });
+
+      // Spread reminders evenly through the day, starting tomorrow, for durationDays days.
+      const reminders = [];
+      for (let day = 1; day <= m.durationDays; day++) {
+        for (let dose = 0; dose < m.frequencyPerDay; dose++) {
+          const hourGap = 12 / m.frequencyPerDay;
+          const scheduledAt = new Date();
+          scheduledAt.setDate(scheduledAt.getDate() + day);
+          scheduledAt.setHours(8 + Math.floor(dose * hourGap), 0, 0, 0);
+          reminders.push({ prescriptionId: prescription.id, scheduledAt });
+        }
+      }
+      await prisma.reminder.createMany({ data: reminders });
+    }
   }
 
   const summary = await generatePostvisitSummary(doctorNotes);
